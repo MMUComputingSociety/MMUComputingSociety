@@ -1,0 +1,253 @@
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li,
+table,
+caption,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+footer,
+header,
+menu,
+nav,
+section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+/* css reset */
+
+
+/*======== Navigation ==========*/
+
+header {
+    width: 100%;
+    background: #3ba3f2;
+    overflow: hidden;
+}
+
+#homeImg {
+	height: 40px;
+    width: 40px;
+    float:right;
+    border-radius: 50%;
+}
+
+#logo {
+	background: #3ba3f2;
+    float:left;
+}
+
+#mainNav {
+    list-style-type: none;
+    /* removes bullet points */
+    background-color: #3ba3f2;
+}
+
+.nav {
+    display: block;
+    color: white;
+    text-shadow: 3px 2px #272727;
+    /*gives text some drop shadow*/
+    font-size: 45px;
+    /* sets font size of links used in nav class */
+    padding: 14px 16px;
+    /*gives each link some padding */
+    text-decoration: none;
+    /* removed underline from link text */
+    font-family: 'Ubuntu', sans-serif;
+    /* gives nav class links this google font */
+    float: left;
+    /*makes links float in order from left hand side */
+    
+}
+
+.rightFloat {
+    float: right;
+}
+
+.nav:hover {
+    color: #828081;
+    text-shadow: 4px 3px #373737;
+    /*makes text pop out a little on hover*/
+}
+
+.nav:focus {
+    color: #828081;
+}
+
+.active {
+    color: #828081;
+}
+
+
+
+a {
+    color: #828081;
+    /*sets text color for links */
+}
+
+a:hover {
+    color: black;
+}
+
+#siteBreadcrumbTrail {
+    margin: 10px;
+    /*gives a margin between these links and other content*/
+}
+
+
+/*======== main body content ======*/
+
+body {
+    background-color: #3ba3f2;
+    font-family: 'Roboto', sans-serif;
+    ;
+    /* font for main body */
+}
+
+#container {
+    background-color: #f4f4f4;
+    margin: auto;
+    /*places continer on right hand side of the page */
+    Height: 95%;
+    width: 85%;
+    color: #373737;
+    padding: 1px;
+    border-radius: 25px;
+    text-align: justify;
+    /* fixes gap due to margin overflow betwen nav and container */
+}
+
+#profilePic {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 10px;
+    float: left;
+}
+
+/* ======= Newsletter ======= */
+
+#newsHeader {
+	width: 80%;
+}
+.newsImg {
+	width:200px;
+    height: 200px;
+    display: block;
+    float: left;
+    padding: 10px;
+}
+
+#newsletter {
+	
+}
+.style1 {
+	width: 80%;
+    margin: auto;
+    background: #f4f4f4;
+    clear: both;
+}
+
+.style2 {
+	width: 80%;
+    margin: auto;
+    background: #373737;
+    color: #f4f4f4;
+    clear: both;
+}
+
+
+/* ======== misc ========*/
+
+h1,
+p,
+h2,
+h3,
+img {
+    padding: 10px;
+    /* adds some padding around these elements */
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    /* centers the text within its container */
+}
+
+
+/* ======== media queries ======== */
+
+@media only screen and (max-width: 480px) {
+    .nav,
+    .footerLinks,
+    .rightFloat {
+        /*ovverides the css for each of the below elements for screen sizes under 480px*/
+        float: none;
+        font-size: 15px;
+    }
+    #profilePic {
+        width: 200px;
+        height: 180px;
+    }
+
+    #container {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width 800px) {
+    .nav,
+    .footerLinks,
+    .rightFloat {
+        /*overrides the css for the elements below for screen sizes under 850px*/
+        float: none;
+    }
+    #profilePic {
+        width: 200px;
+        height: 180px;
+    }
+
+    #container {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .nav,
+    .footerLinks,
+    .rightFloat {
+        /*overrides the css for the elements below for screen sizes under 850px*/
+        float: none;
+    }
+    #profilePic {
+        width: 200px;
+        height: 180px;
+        float: none;
+        margin: auto;
+        position: relative;
+        display: grid;
+    }
+    #container {
+        width: 85%;
+    }
+}
